@@ -10,7 +10,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-# Функция для отправки запросов (ваш исходный код)
+# Функция для отправки запросов 
 def send_requests(phone_number, repeat_count=3):
     count = 0
     for _ in range(repeat_count):
@@ -67,7 +67,7 @@ async def handle_phone(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Основная функция
 def main():
     # Замените 'YOUR_TELEGRAM_BOT_TOKEN' на токен вашего бота
-    application = Application.builder().token('7901892235:AAEcP3BrnbJE79t_NU9KLpw2ofJ57Xssqj8').build()
+    application = Application.builder().token('YOUR_TELEGRAM_BOT_TOKEN').build()
     
     # Регистрация обработчиков
     application.add_handler(CommandHandler('start', start))
